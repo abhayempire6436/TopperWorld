@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Abhay - Portfolio</title>
+    <style>
+        /* Media Queries */
+        @media only screen and (max-width: 720px){
+            body{
+                /* background-color: red; */
+            }
+
+            .left{
+                /* border: 2px solid black; */
+                width: 100vw;
+                text-align: center;
+                /* margin: 20px auto 10px auto; */
+                margin-bottom: 0;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-around; */
+                align-items: center;
+                height: 20vh;
+                background-color: rgb(27, 27, 143);
+                
+            }
+            nav .right{
+                /* border: 2px solid black; */
+                margin-top: 0;
+            }
+
+            .firstSection{
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-around; */
+                /* margin: 10px 0; */
+                /* border: 2px solid white; */
+                /* flex-direction: row; */
+                /* height: 100vh; */
+            }
+
+            .leftSection{
+                /* background-color: red; */
+                /* border: 2px solid black; */
+                /* margin: 20px 0; */
+                font-size: 2rem;
+                width: 79%;
+                height: 55vw;
+                padding: 30px 50px 0 50px;
+            }
+            .righttSection{
+                /* background-color: red; */
+                margin-top: 10px;
+                width: 99vw;
+                padding: 0px;
+                /* border: 2px solid black; */
+            }
+            .righttSection img{
+                width: 99.5vw;
+                /* height: 100vh; */
+
+                /* margin: 30px 0; */
+                border-radius: 7px;
+            }
+        }
+
+        @media only screen and (max-width: 815px){
+            .secondSection .skills{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 531px){
+            .secondSection .skills{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 657px){
+            .thirdSection .education{
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .thirdSection h1{
+                text-align: center;
+            }
+
+            .thirdSection .education .masters{
+                width: 100%;
+                height: 40vh;
+                /* margin: 30px; */
+                border: 2px solid #067857;
+                padding: 30px 0 0 0;
+                background-color: rgb(71, 50, 168);
+            }
+        }
+
+        @media only screen and (max-width: 815px){
+            
+
+            
+
+            .fourthSection .profileLink{
+                margin-top: 50px;
+                display: flex;
+                /* border: 2px solid black; */
+                /* justify-content:space-evenly; */
+                flex-direction: column;
+            }
+
+            .fourthSection .profileLink p{
+                /* font-size: 20px;
+                line-height: 40px; */
+                margin-left: 10px;
+                /* text-align: center; */
+            }
+        }
+
+        @media only screen and (max-width: 442px){
+            .leftSection{
+                padding: 10%;
+            }
+
+            .fourthSection h1{
+                text-align: center;
+            }
+
+            .fourthSection li{
+                font-size: 20px;
+                /* text-decoration: none; */
+                list-style: none;
+                line-height: 40px;
+                margin-left: 0px;
+                text-align: center;
+            }
+
+            .fifthSection h1, p{
+                text-align: center;
+            }
+
+            .fifthSection .btn{
+                /* width: 100%;
+                margin: auto; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px solid black; */
+            }
+            .fifthSection .btn a{
+                /* width: 100%;
+                margin: 0 auto; */
+                /* display: block; */
+            }
+            .fifthSection a button{
+                /* margin: 20px auto; */
+                width: 100px;
+                height: 4vh;
+                font-size: 17px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><span id="abhay"></span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <!-- <li><a href="#">Sevices</a></li> -->
+                    <!-- <li><a href="#">Projects</a></li> -->
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, I am <span class="text">Abhay</span>  
+                <div>and I am </div>
+                <span id="element"></span>
+            </div>
+            <div class="righttSection">
+                <img src="images/developer.png" alt="Loading...">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h1>Technical Skills</h1>
+            <div class="skills">
+                <div class="s1">C</div>
+                <div class="s1">Java</div>
+                <div class="s1">DSA</div> 
+                <div class="s1">HTML</div>
+                <div class="s1">CSS</div>
+                <div class="s1">JavaScipt</div>
+                <div class="s1 center">React</div>
+                <div class="s1">SQL</div>
+                <div class="s1 center">Problem Solving</div>
+            </div>          
+        </section>
+
+        <hr>
+
+        <section class="thirdSection">
+            <h1>Education</h1>
+            <div class="education">
+                <div class="masters">
+                    <!-- <p style="font-size: 35px;">PG</p> -->
+                    <p><span id="mca"></span></p>
+                    <p>PSIT, Kanpur</p>
+                    <p>2022 - Present</p>
+                    <p>Aggregate % : 74.61 <br>(till 1st year)</p>
+                </div>
+                <div class="masters">
+                    <!-- <p>UG</p> -->
+                    <p><span id="bsc"></span></p>
+                    <p>Dr. RMLAU, Ayodhya</p>
+                    <p>2019 - 2022</p>
+                    <p>Aggregate % : 76</p>
+                </div>
+                <!-- <div class="masters">
+                    <h1>Intermediate</h1>
+                    <h1>Anil Saraswati Vidya Mandir, Ayodhya</h1>
+                    <h1>2018 - 2019</h1>
+                    <h1>Aggregate %: 68%</h1>
+                </div>
+                <div class="masters">
+                    <h1>HIghSchool</h1>
+                    <h1>PSIT, Kanpur</h1>
+                    <h1>2022 - Present</h1>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="fourthSection">
+            <h1>Achievements</h1>
+            <li><span style="color: gold;  border-radius: 10px; font-weight: bold;">Gold</span> Star Java Coder @HackerRank</li>
+            <li><span style="color: gold;  border-radius: 10px; font-weight: bold;">Gold</span> Star Problem Solver @HackerRank</li>
+            <li><span style="color: silver;  border-radius: 10px; font-weight: bold;">Silver</span> Star C++ Coder @HackerRank</li>
+            <li>Overall Solved 150+ DSA Questions</li>
+            <h1>Social Profile Links</h1>
+            <div class="profileLink">
+                
+                <p>Github Profile Link - <a href="https://github.com/abhayempire6436" target="_blank">Click Me</a></p>
+                <p>HackerRank Profile Link - <a href="https://www.hackerrank.com/abhay_singh3104" target="_blank">Click Me</a></p>
+                <p>Leetcode Profile Link - <a href="https://leetcode.com/abhayempire6436/" target="_blank">Click Me</a></p>
+            </div>
+        </section>
+
+        <section class="fifthSection">
+            <h1>Download Resume</h1>
+            <p>Click here to Download Abhay's Resume</p>
+            <div class="btn">
+                <a href="https://drive.google.com/file/d/10yxxiLIp94hUNKz1KhBr8C6e-acgyPni/view?usp=sharing" target="_blank"><button>Download</button></a>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['a Programmer', 'a Web Developer.'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+        });
+
+        var typed2 = new Typed('#mca', {
+            strings: ['MCA'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+
+        var typed3 = new Typed('#bsc', {
+            strings: ['B.Sc'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+        
+        var typed2 = new Typed('#abhay', {
+        strings: ['Abhay\'s Portfolio'],
+        typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

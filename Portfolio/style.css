@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: rgb(22, 22, 99); */
+    background-color: #0B2447;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(27, 27, 143);
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover{
+    color: rgb(130, 130, 214);
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+.left{
+    font-size: 1.5rem;
+    /* border: 2px solid black; */
+    width: 50vh;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 10px 0; */
+    /* border: 2px solid white; */
+    /* flex-direction: row; */
+}
+
+.firstSection > div{
+    /* width: 33%; */
+}
+
+.leftSection{
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    margin: 70px 0 0 0;
+    font-size: 3vw;
+    width: 50%;
+    height: 40vh;
+    padding: 50px 0 0 50px;
+}
+.righttSection{
+    /* background-color: red; */
+    width: 50%;
+    padding: 50px;
+    /* border: 2px solid black; */
+}
+
+.righttSection img{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 7px;
+}
+
+.leftSection .text{
+    font-weight: bold;
+    color: rgb(130, 130, 214);
+}
+
+#element{
+    color: rgb(130, 130, 214);
+}
+
+.secondSection{
+    /* background-color: red; */
+    width: 90%;
+    margin: 0px auto 70px auto;
+    /* border: 2px solid black; */
+}
+
+.secondSection h1{
+    font-size: 2rem;
+    margin: 60px 0;
+}
+
+.secondSection .skills{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* background-color: rosybrown; */
+    /* border: 2px solid  rgb(130, 130, 214); */
+    height: 40%;
+}
+
+.secondSection .skills .s1{
+    /* background-color: red; */
+    width: 220px;
+    height: 220px;
+    /* border: 25px solid rgb(212, 126, 14); */
+    border: 3px solid #576CBC;
+    border-radius: 50%;
+    /* background-color: #19376D; */
+    background-color: rgb(27, 27, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    animation: rotate 7s linear infinite;         
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.secondSection .skills .center{
+    text-align: center;
+}
+
+hr{
+    width: 83%;
+    margin: 100px auto;
+}
+
+.thirdSection{
+    width: 83%;
+    margin: 80px auto 70px auto;
+    /* border: 3px solid black; */
+}
+
+.thirdSection h1{
+    font-size: 2rem;
+    margin: 0 0 60px 0;
+}
+
+.thirdSection .education{
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+    /* border: 3px solid black; */
+    margin: 0 auto;
+
+}
+.thirdSection .education .masters{
+    width: 300px;
+    height: 250px;
+    /* margin: 30px; */
+    border: 3px solid #576CBC;
+    padding: 30px 10px 0 10px;
+    background-color: rgb(27, 27, 143);
+}
+
+.thirdSection .education .masters p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#mca{
+    color: #fff;
+}
+
+.fourthSection{
+    width: 83%;
+    margin: 110px auto 70px auto;
+    /* border: 3px solid black; */
+}
+
+.fourthSection h1{
+    font-size: 2rem;
+    margin: 60px 0;
+}
+
+.fourthSection li{
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.fourthSection .profileLink{
+    margin-top: 30px;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content:space-evenly;
+}
+.fourthSection .profileLink p{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.fourthSection .profileLink p a{
+    text-decoration: none;
+    color: #067857;
+    font-weight: bold;
+
+}
+
+.fourthSection .profileLink p a:hover{
+    text-decoration: underline;
+}
+
+.fifthSection{
+    width: 83%;
+    margin: 50px auto 70px auto;
+    /* border: 2px solid black; */
+}
+
+.fifthSection h1{
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.fifthSection p{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.fifthSection .btn{
+    /* border: 2px solid black; */
+    /* width: 100%;
+    margin: 0 auto; */
+}
+.fifthSection a button{
+    /* margin: 20px 0; */
+    /* width: 100px; */
+    /* height: 4vh; */
+    padding: 7px;
+    font-size: 17px;
+}
+
+.fifthSection a button:hover{
+    background-color: rgb(71, 50, 168);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+

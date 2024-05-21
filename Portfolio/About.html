@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>About</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(22, 22, 99);
+        /* background-color: lavender; */
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        /* background-image: url(images/Coding.jpg);
+            background-size: cover; */
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(27, 27, 143);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1rem;
+      }
+
+      nav ul li a:hover {
+        color: rgb(130, 130, 214);
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+        width: 20%;
+      }
+
+      .box {
+        width: 50%;
+        margin: 30px auto;
+        padding: 30px;
+        line-height: 30px;
+        /* border: 3px solid black; */
+        border-radius: 10px;
+        /* background-color: rgb(88, 88, 206); */
+        background-color: rgba(130, 130, 214, 0.7);
+        /* height: 73vw; */
+        /* background-color: rgba(0, 0, 0, 0.685); */
+      }
+
+      .box h1 {
+        /* text-align: center; */
+        margin-bottom: 40px;
+      }
+
+      .box .details {
+        /* border: 2px solid black; */
+        padding: 35px;
+      }
+
+      .box p {
+        font-size: 22px;
+        text-align: justify;
+        font-family: "Courier New", Courier, monospace;
+        /* font-weight: bold; */
+      }
+
+      #element {
+        font-size: 20px;
+        text-align: justify;
+      }
+
+      @media only screen and (max-width: 720px) {
+        body {
+          /* background-color: red; */
+        }
+
+        .left {
+          /* border: 2px solid black; */
+          width: 100vw;
+          text-align: center;
+          /* margin: 20px auto 10px auto; */
+          margin-bottom: 0;
+        }
+
+        nav {
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-around; */
+          align-items: center;
+          height: 20vh;
+          background-color: rgb(27, 27, 143);
+        }
+
+        nav .right {
+          /* border: 2px solid black; */
+          margin-top: 0;
+        }
+
+        .box h1 {
+          text-align: center;
+          /* margin-bottom: 40px; */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left"><span id="abhay"></span></div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <!-- <li><a href="#">Sevices</a></li> -->
+            <!-- <li><a href="#">Projects</a></li> -->
+            <li><a href="contactMe.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="box">
+      <h1>About</h1>
+      <!-- <span id="element"></span>
+        <div id="element1"></div> -->
+      <p>
+        Hello, My name is <b>Abhay</b> currently I am persuing MCA from PSIT,
+        Kanpur. I have skills in programming in which I used Java Programming
+        language and I also have Web development skills like HTML, CSS and
+        JavaScript. My dream is to become a developer that can develop anything
+        using programming languages. And I love to learn new technologies that
+        challenges me for new difficulties. I love to solve problems in these. I
+        am always ready for learning new skills that will increase my knowledge
+        in IT field.
+      </p>
+      <p style="margin-top: 15px">
+        I love to work alone but I can also work in a team.
+      </p>
+      <p style="margin-top: 15px">
+        My hobbies are listening music, and in sports I like Cricket and I love
+        to play cricket with my brothers and I also love gaming.
+      </p>
+    </div>
+
+    <!-- <div>
+      Hi, My name is Abhay I have skills in programming in which I used Java
+      Programming language and I also have Web development skills like HTML, CSS
+      and JavaScript. In present time I am learning some Android development
+      skills and I am using Java for Android development.
+    </div> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed2 = new Typed("#abhay", {
+        strings: ["Abhay's Portfolio"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

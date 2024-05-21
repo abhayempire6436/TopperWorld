@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/2b9b89339b.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(22, 22, 99);
+            /* background-color: lavender; */
+            color: #fff;
+            font-family: 'Roboto Slab', serif;
+            /* background-image: url(images/Coding.jpg);
+            background-size: cover; */
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(27, 27, 143);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover{
+            color: rgb(130, 130, 214);
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+            /* border: 2px solid black; */
+            width: 20%;
+        }
+
+        .contact{
+            width: 50%;
+            margin: 30px auto;
+            padding: 30px;
+            line-height: 30px;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            /* background-color: rgb(88, 88, 206); */
+            background-color: rgba(130, 130, 214, 0.7);
+            /* height: 73vh; */
+        }
+
+        .contact .details{
+            /* border: 2px solid black; */
+            padding: 35px;
+            /* width: 50vw; */
+            margin: 20px 0 0 0;
+        }
+
+        /* .contact .details .email p span{
+            font-size: 3vh;
+        } */
+        .contact p{
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 720px){
+            body{
+                /* background-color: red; */
+            }
+
+            .left{
+                /* border: 2px solid black; */
+                width: 100vw;
+                text-align: center;
+                /* margin: 20px auto 10px auto; */
+                margin-bottom: 0;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+                /* justify-content: space-around; */
+                align-items: center;
+                height: 20vh;
+                background-color: rgb(27, 27, 143);
+                
+            }
+            nav .right{
+                /* border: 2px solid black; */
+                margin-top: 0;
+            }
+
+            .contact h1{
+                text-align: center;
+            }
+            .contact .details{
+                text-align: center;
+            }
+
+        }
+
+        @media only screen and (max-width: 953px){
+            .contact{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 707px){
+            .contact .details .email p span{
+                font-size: 3vw;
+                /* padding: 0px; */
+                /* border: 2px solid black; */
+                /* margin: 0; */
+            }
+
+            .contact .details{
+                /* border: 2px solid black; */
+                padding: 3vw;
+                /* width: 50vw; */
+                margin: 20px 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><span id="abhay"></span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <!-- <li><a href="#">Sevices</a></li> -->
+                    <!-- <li><a href="#">Projects</a></li> -->
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <h1>Contact Details (from India)</h1>
+        <div class="details">
+            <div class="email">
+                <i class="fa-solid fa-envelope" style="color: black; font-size: 20px; margin-right: 10px;"></i>
+                <p style="display: inline;">Email ID : <span>abhay.singh3104@gmail.com</span></p>
+            </div>
+            
+            <br>
+            <div class="number">
+                <i class="fa-solid fa-phone" style=" color: black; font-size: 20px; margin-right: 10px;"></i>
+                <p style="display: inline-block;">Phone No.  +919651604886,  +918858104886</p>
+            </div>
+            
+            <br>
+            <div class="linkedin">
+                <i class="fa-brands fa-linkedin" style="color: black; font-size: 20px; margin-right: 10px;"></i>
+                <p style="display: inline-block;"><a href="https://www.linkedin.com/in/abhay-singh-07aaa5217/" style="text-decoration: none; color: #fff;" target="_blank">LinkedIn</a></p>
+            </div>
+            
+            <br>
+            <div class="github">
+                <i class="fa-brands fa-github" style="color: black; font-size: 20px; margin-right: 10px;"></i>
+                <p style="display: inline-block;"><a href="https://github.com/abhayempire6436" style="text-decoration: none; color: #fff;" target="_blank">Github</a></p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed2 = new Typed('#abhay', {
+        strings: ['Abhay\'s Portfolio'],
+        typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
