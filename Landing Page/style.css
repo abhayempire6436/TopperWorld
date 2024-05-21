@@ -54,7 +54,7 @@ nav .links ul li a:hover{
 }
 
 .body{
-    background-image: url(/images/bg.png);
+    background-image: url(./images/bg.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
